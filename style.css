@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+.lb {
+  color: #3495d6;
+}
+
+.db {
+  color: #34495e;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+nav ul {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+}
+
+nav li:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-icon {
+  margin-right: 5px;
+  height: 22px;
+  transition: all 0.2s;
+}
+
+.nav-text {
+  font-size: 22px;
+  transition: all 0.2s;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+main .logo-wrapper,
+.communique {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 80vh;
+}
+
+main .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background: transparent;
+  border-radius: 57% 43% 37% 63% / 45% 52% 48% 55%;
+  /*border-radius: 53% 47% 47% 53% / 48% 50% 50% 52%;*/
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+
+.communique .speed-button {
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+  background: #34495e;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.2s;
+}
+
+.speed-button:hover {
+  background: #3495d6;
+}
+
+.communique .animated-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #34495e;
+  height: 225px;
+  width: 80%;
+}
+.communique .animated-text p {
+  text-align: center;
+}
+
+.logo img {
+  height: 300px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+footer li:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon {
+  height: 28px;
+  transition: all 0.2s;
+}
