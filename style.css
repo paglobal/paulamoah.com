@@ -129,7 +129,7 @@ nav .inactive {
   }
 
   nav .ul a:active {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
   nav a {
@@ -314,7 +314,7 @@ nav .inactive {
   }
 
   nav .ul a:active {
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
   nav a {
@@ -474,19 +474,17 @@ nav .inactive {
   nav .ul {
     position: static;
     height: auto;
-    width: auto;
-    z-index: initial;
-    margin-top: 20px;
-    background: #fff;
-    transition: none;
     width: 100%;
+    overflow: visible;
+    margin-top: 20px;
+    transition: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
   nav a:hover {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
   body:is(.user-is-tabbing) nav a:focus {
