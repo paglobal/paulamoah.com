@@ -121,7 +121,7 @@ nav .inactive {
     background: rgba(255, 255, 255, 0.9);
     z-index: 1;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -306,7 +306,7 @@ nav .inactive {
     background: #fff;
     z-index: 1;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
