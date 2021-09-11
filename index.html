@@ -7,10 +7,25 @@
     <title>Paul Amoah</title>
   </head>
   <body>
-    <!--nav-->
-    <nav>
-      <ul>
-        <li>
+    <!--hompage-->
+    <div class="homepage">
+      <!--nav-->
+      <nav>
+        <!--hamburger and close buttons-->
+        <!--hamburger-->
+        <a
+          href="javascript:void(0)"
+          onclick="openNav()"
+          class="hamburger active"
+          ><img src="nav-icons/Hamburger-icon.svg" alt=""
+        /></a>
+        <!--close-->
+        <a href="javascript:void(0)" onclick="closeNav()" class="close inactive"
+          ><img src="nav-icons/Close-icon.svg" alt=""
+        /></a>
+
+        <div class="ul">
+          <!--home icon-->
           <a href="#">
             <img
               class="nav-icon"
@@ -19,8 +34,8 @@
               srcset=""
             /><span class="nav-text lb">Home</span>
           </a>
-        </li>
-        <li>
+
+          <!--newsletter icon-->
           <a
             href="https://newsletter.paulamoah.com/"
             target="_blank"
@@ -33,8 +48,8 @@
               srcset=""
             /><span class="nav-text db">Newsletter</span>
           </a>
-        </li>
-        <li>
+
+          <!--projects icon-->
           <a href="#">
             <img
               class="nav-icon"
@@ -43,8 +58,8 @@
               srcset=""
             /><span class="nav-text db">Projects</span>
           </a>
-        </li>
-        <li>
+
+          <!--about icon-->
           <a href="#">
             <img
               class="nav-icon"
@@ -53,80 +68,94 @@
               srcset=""
             /><span class="nav-text lb">About</span>
           </a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </nav>
 
-    <main>
-      <!--communique-->
-      <div class="communique">
-        <button class="speed-button">1x</button>
-        <div class="animated-text"><p></p></div>
-      </div>
+      <main>
+        <!--communique-->
+        <div class="communique">
+          <button class="speed-button">1x</button>
+          <div class="animated-text">
+            <p></p>
+          </div>
+        </div>
 
-      <!--logo-->
-      <div class="logo-wrapper">
-        <div class="logo"><img src="Site-logo.svg" alt="" srcset="" /></div>
-      </div>
-    </main>
+        <!--site logo-->
+        <div class="logo-wrapper">
+          <div class="logo"><img src="Site-logo.svg" alt="" srcset="" /></div>
+        </div>
+      </main>
 
-    <!--footer-->
-    <footer class="social-icons">
-      <ul>
-        <li>
-          <a
-            href="https://open.spotify.com/user/31s5ydr7seg6skwswz7gldckngxq?si=054ed32ca9d844f6"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="social-icon"
-              src="social-logos/Spotify-logo.svg"
-              alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/paul-amoah-5158a5193/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="social-icon"
-              src="social-logos/LinkedIn-logo.svg"
-              alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/paglobal"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img class="social-icon" src="social-logos/Github-logo.svg" alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/iampaul_a"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="social-icon"
-              src="social-logos/Twitter-logo.svg"
-              alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/paglobal_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="social-icon"
-              src="social-logos/Instagram-logo.svg"
-              alt=""
-          /></a>
-        </li>
-      </ul>
-    </footer>
+      <!--footer-->
+      <footer class="social-icons">
+        <ul>
+          <!--spotify logo-->
+          <li>
+            <a
+              href="https://open.spotify.com/user/31s5ydr7seg6skwswz7gldckngxq?si=054ed32ca9d844f6"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="social-icon"
+                src="social-logos/Spotify-logo.svg"
+                alt=""
+            /></a>
+          </li>
+
+          <!--linkedin logo-->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/paul-amoah-5158a5193/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="social-icon"
+                src="social-logos/LinkedIn-logo.svg"
+                alt=""
+            /></a>
+          </li>
+
+          <!--github logo-->
+          <li>
+            <a
+              href="https://github.com/paglobal"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="social-icon"
+                src="social-logos/Github-logo.svg"
+                alt=""
+            /></a>
+          </li>
+
+          <!--twitter logo-->
+          <li>
+            <a
+              href="https://twitter.com/iampaul_a"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="social-icon"
+                src="social-logos/Twitter-logo.svg"
+                alt=""
+            /></a>
+          </li>
+
+          <!--instagram logo-->
+          <li>
+            <a
+              href="https://www.instagram.com/paglobal_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="social-icon"
+                src="social-logos/Instagram-logo.svg"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
