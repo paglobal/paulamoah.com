@@ -101,12 +101,11 @@ document.addEventListener("touchend", handleTap);
 
 /* Open when someone clicks on hamburger */
 function openNav() {
-  document.querySelector("nav .ul").style.width = "100vw";
+  document.querySelector("nav .ul").style.width = "65vw";
   document.querySelector(".hamburger").classList.add("inactive");
   document.querySelector(".hamburger").classList.remove("active");
   document.querySelector(".close").classList.add("active");
   document.querySelector(".close").classList.remove("inactive");
-  console.log(2);
 }
 
 /* Close when someone clicks on close */
