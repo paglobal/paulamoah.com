@@ -168,11 +168,11 @@ nav .inactive {
 
   .nav-icon {
     margin-right: 15px;
-    height: 20px;
+    height: 18px;
   }
 
   .nav-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   main {
@@ -373,11 +373,11 @@ nav .inactive {
 
   .nav-icon {
     margin-right: 15px;
-    height: 28px;
+    height: 25px;
   }
 
   .nav-text {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   main {
@@ -554,6 +554,7 @@ nav .inactive {
     padding: 12px 18px 12px 18px;
     border-radius: 6px;
     margin: 0;
+    /*width: 240px;*/
   }
 
   .nav-icon {
