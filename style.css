@@ -12,10 +12,12 @@ body {
 }
 
 .lb {
+  /*background: rgba(52, 149, 214, 0.2);*/
   color: #3495d6;
 }
 
 .db {
+  /*background: rgba(52, 73, 94, 0.2);*/
   color: #34495e;
 }
 
@@ -85,79 +87,91 @@ nav .inactive {
 }
 
 @media only screen and (max-width: 600px) {
+  html {
+    height: 100%;
+    position: relative;
+    display: flex;
+  }
+
   body {
-    width: 100vw;
-    min-height: 90vh;
+    margin: auto;
+    width: 100%;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
 
   nav .hamburger,
   .close {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 10px;
     left: 10px;
     z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav .hamburger img {
-    height: 13px;
-  }
-
-  nav .close img {
-    height: 20px;
+  nav .hamburger img,
+  .close img {
+    height: 15px;
+    width: 15px;
   }
 
   nav .ul {
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
-    height: 80vh;
-    width: 0;
-    /*backdrop-filter: blur(4px);*/
-    background: rgba(255, 255, 255, 0.9);
+    height: 270px;
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    border-radius: 0px 6px 6px 0px;
     z-index: 1;
     overflow: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  nav .ul.open {
+    width: 160px;
+  }
+
+  nav .ul.closed {
+    width: 0;
   }
 
   nav .ul a:active {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav a {
+  nav .ul a {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    padding: 12px 18px 12px 18px;
-    border-radius: 6px;
-  }
-
-  nav a:nth-child(4) {
-    margin-bottom: -40px;
+    padding: 12px 18px 12px 10px;
+    margin: 10px 0 10px 0;
   }
 
   .nav-icon {
     margin-right: 15px;
-    height: 22px;
-    transition: all 0.2s;
+    height: 18px;
   }
 
   .nav-text {
-    font-size: 22px;
-    transition: all 0.2s;
+    font-size: 18px;
   }
 
   main {
@@ -277,77 +291,91 @@ nav .inactive {
 }
 
 @media only screen and (min-width: 600px) {
+  html {
+    display: flex;
+    height: 100%;
+    position: relative;
+  }
+
   body {
-    width: 100vw;
-    min-height: 90vh;
+    margin: auto;
+    width: 100%;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
 
   nav .hamburger,
   .close {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 20px;
     left: 20px;
     z-index: 2;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav .hamburger img {
+  nav .hamburger img,
+  .close img {
     height: 22px;
-  }
-
-  nav .close img {
-    height: 30px;
+    width: 22px;
   }
 
   nav .ul {
     position: absolute;
-    top: 0;
+    top: 140px;
     left: 0;
-    height: 80vh;
-    width: 0;
+    height: 360px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 6px 6px 0px;
     z-index: 1;
     overflow: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  nav .ul.open {
+    width: 225px;
+  }
+
+  nav .ul.closed {
+    width: 0;
   }
 
   nav .ul a:active {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav a {
+  nav .ul a {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    padding: 20px 30px 20px 30px;
-    border-radius: 6px;
-  }
-
-  nav a:nth-child(4) {
-    margin-bottom: -80px;
+    padding: 20px 30px 20px 15px;
+    margin: 10px 0 10px 0;
   }
 
   .nav-icon {
-    margin-right: 25px;
-    height: 35px;
-    transition: all 0.2s;
+    margin-right: 15px;
+    height: 25px;
   }
 
   .nav-text {
-    font-size: 35px;
-    transition: all 0.2s;
+    font-size: 25px;
   }
 
   main {
@@ -471,9 +499,15 @@ nav .inactive {
 }
 
 @media only screen and (min-width: 1100px) {
+  html {
+    display: flex;
+    height: 100%;
+  }
+
   body {
-    width: 100vw;
-    min-height: auto;
+    margin: auto;
+    width: 100%;
+    height: min-content;
     display: block;
   }
 
@@ -492,7 +526,12 @@ nav .inactive {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     box-shadow: none;
+  }
+
+  nav .ul.closed {
+    width: 100%;
   }
 
   nav a:hover {
@@ -503,7 +542,7 @@ nav .inactive {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   }
 
-  nav a {
+  nav .ul a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,17 +551,16 @@ nav .inactive {
     outline: none;
     padding: 12px 18px 12px 18px;
     border-radius: 6px;
+    margin: 0;
   }
 
   .nav-icon {
     margin-right: 5px;
     height: 22px;
-    transition: all 0.2s;
   }
 
   .nav-text {
     font-size: 22px;
-    transition: all 0.2s;
   }
 
   main {

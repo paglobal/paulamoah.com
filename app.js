@@ -1,23 +1,16 @@
 const texts = [
-  'You can change the playback speed of this animation by tapping the button labelled "1x" above',
+  "You can change the speed of this animation with the button above.",
   "Keep tapping until you reach a desired speed.",
-  "Hi there!",
-  "Welcome to my corner of the internet.",
-  "Make yourself at home!",
-  "Sadly some things don't work yet.",
-  "Like the links above if you're on a large screen or the links in the drawer menu if you're on a smaller screen.",
-  'Aside from the one labelled "Newsletter".',
-  "You can subscribe to my newsletter with that one.",
-  "The social media links down below work fine though.",
+  "Hi there &#128075;!",
+  "Welcome to my corner of the internet &#127760 &#128513;.",
+  "Make yourself at home &#128146;!",
+  "You can subscribe to my newsletter with the 'Newsletter' navigation link in the navigation menu.",
+  "The other navigation links don't yet work though &#128517;.",
+  "My social media links are down below.",
   "Follow and connect with me everywhere!",
-  "I'm not really an active social media person though.",
-  "Working on changing that soon.",
-  "You can also checkout my spotify playlist if you so desire.",
-  "I'm still in the process of moving in so I'll be fixing up some things soon.",
-  "And I'll spice up the place with a few more things every once in a while.",
-  "Hope you'll be able visit from time to time.",
-  "Been a nice chat!",
-  "Have a nice day!",
+  "Will continuously be working on this place so you can visit me from time to time to see what I'm up to &#128579.",
+  "Nice chatting with you!",
+  "Have a nice day &#129305;!",
 ];
 
 let count = 0;
@@ -39,10 +32,14 @@ let paragraphTimeout = 1000;
 
   currentText = texts[count];
   letter = currentText.slice(0, ++index);
+  skip = /&(#)*([0-9]+)*;*$/g.test(letter);
+  leter = letter.replace(/&(#)*([0-9]+)*;*$/g, letter);
 
   document.querySelector(".animated-text p").innerHTML =
     letter + '<span class="cursor"></span>';
-  if (letter.length === currentText.length) {
+  if (skip) {
+    type();
+  } else if (letter.length === currentText.length) {
     count++;
     index = 0;
     setTimeout(type, paragraphTimeout);
@@ -54,7 +51,7 @@ let paragraphTimeout = 1000;
 window.onload = function () {
   speedButton = document.querySelector(".speed-button");
 
-  speedFactorArray = [1, 1.5, 2, 2.5, 3, 3.5, 4, 0.2, 0.5, 0.7];
+  speedFactorArray = [1, 1.5, 2, 2.5, 0.2, 0.5, 0.7];
 
   speedFactorIndex = 0;
 
@@ -101,7 +98,8 @@ document.addEventListener("touchend", handleTap);
 
 /* Open when someone clicks on hamburger */
 function openNav() {
-  document.querySelector("nav .ul").style.width = "65vw";
+  document.querySelector("nav .ul").classList.add("open");
+  document.querySelector("nav .ul").classList.remove("closed");
   document.querySelector(".hamburger").classList.add("inactive");
   document.querySelector(".hamburger").classList.remove("active");
   document.querySelector(".close").classList.add("active");
@@ -110,7 +108,8 @@ function openNav() {
 
 /* Close when someone clicks on close */
 function closeNav() {
-  document.querySelector("nav .ul").style.width = "0";
+  document.querySelector("nav .ul").classList.add("closed");
+  document.querySelector("nav .ul").classList.remove("open");
   document.querySelector(".hamburger").classList.add("active");
   document.querySelector(".hamburger").classList.remove("inactive");
   document.querySelector(".close").classList.add("inactive");
