@@ -119,21 +119,25 @@ nav .inactive {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav .hamburger img,
-  .close img {
+  nav .hamburger img {
     height: 20px;
     width: 20px;
   }
 
+  nav .close img {
+    height: 17px;
+    width: 17px;
+  }
+
   nav .ul {
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 0;
     height: 270px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
     border-radius: 0px 6px 6px 0px;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
@@ -223,7 +227,7 @@ nav .inactive {
     outline: none;
     border-radius: 50%;
     background: #34495e;
-    box-shadow: 0px 5px 6px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.25);
     color: #fff;
     font-size: 24px;
     transition: all 0.2s;
@@ -289,6 +293,24 @@ nav .inactive {
     height: 22px;
     transition: all 0.2s;
   }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .background.show {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .background.hide {
+    z-index: auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -324,10 +346,13 @@ nav .inactive {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
   }
 
-  nav .hamburger img,
-  .close img {
+  nav .hamburger img {
     height: 30px;
     width: 30px;
+  }
+  nav .close img {
+    height: 25px;
+    width: 25px;
   }
 
   nav .ul {
@@ -338,7 +363,7 @@ nav .inactive {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
     border-radius: 0px 6px 6px 0px;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
@@ -428,7 +453,7 @@ nav .inactive {
     outline: none;
     border-radius: 50%;
     background: #34495e;
-    box-shadow: 0px 5px 6px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.25);
     color: #fff;
     font-size: 35px;
     transition: all 0.2s;
@@ -497,6 +522,25 @@ nav .inactive {
   .social-icon {
     height: 28px;
     transition: all 0.2s;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .background.show {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .background.hide {
+    z-index: auto;
   }
 }
 
@@ -692,5 +736,10 @@ nav .inactive {
   .social-icon {
     height: 28px;
     transition: all 0.2s;
+  }
+
+  .background.show,
+  .background.hide {
+    display: none;
   }
 }

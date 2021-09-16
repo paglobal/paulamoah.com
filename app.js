@@ -104,6 +104,8 @@ function openNav() {
   document.querySelector(".hamburger").classList.remove("active");
   document.querySelector(".close").classList.add("active");
   document.querySelector(".close").classList.remove("inactive");
+  document.querySelector(".background").classList.add("show");
+  document.querySelector(".background").classList.remove("hide");
 }
 
 /* Close when someone clicks on close */
@@ -114,4 +116,6 @@ function closeNav() {
   document.querySelector(".hamburger").classList.remove("inactive");
   document.querySelector(".close").classList.add("inactive");
   document.querySelector(".close").classList.remove("active");
+  document.querySelector(".background").classList.add("hide");
+  document.querySelector(".background").classList.remove("show");
 }
