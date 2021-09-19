@@ -71,9 +71,12 @@ nav .inactive {
 .communique p .cursor {
   display: inline-block;
   width: 3px;
-  height: 20px;
+  height: 16px;
   margin-left: 1px;
   background: #34495e;
+}
+
+.communique p .cursor.blink {
   animation: blink 0.3s infinite linear;
 }
 
@@ -291,7 +294,7 @@ nav .inactive {
   }
 
   .social-icon {
-    height: 15px;
+    height: 18px;
     transition: all 0.2s;
   }
 

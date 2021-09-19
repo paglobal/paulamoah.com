@@ -43,6 +43,7 @@ let paragraphTimeout = 1000;
     count++;
     index = 0;
     setTimeout(type, paragraphTimeout);
+    document.querySelector(".cursor").classList.add("blink");
   } else {
     setTimeout(type, letterTimeout);
   }
