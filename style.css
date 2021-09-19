@@ -71,7 +71,7 @@ nav .inactive {
 .communique p .cursor {
   display: inline-block;
   width: 3px;
-  height: 16px;
+  height: 18px;
   margin-left: 1px;
   background: #34495e;
 }
@@ -247,7 +247,7 @@ nav .inactive {
     justify-content: center;
     align-items: start;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 800;
     color: #34495e;
     height: 250px;
